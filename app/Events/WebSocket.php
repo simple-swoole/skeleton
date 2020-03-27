@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @license  https://github.com/simple-swoole/simps/blob/master/LICENSE
  */
 
-namespace APP\Events;
+namespace App\Events;
 
 use Swoole\WebSocket\Server;
 
