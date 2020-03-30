@@ -15,5 +15,8 @@ use Simps\DB\BaseModel;
 
 class Model extends BaseModel
 {
+    public function index()
+    {
 
+    }
 }

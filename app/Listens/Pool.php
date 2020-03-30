@@ -11,7 +11,6 @@ declare(strict_types=1);
 
 namespace App\Listens;
 
-use Simps\DB\MySQLi;
 use Simps\DB\PDO;
 use Simps\DB\Redis;
 use Simps\Singleton;
@@ -24,15 +23,7 @@ class Pool
     {
         $config = config('database', []);
         if (! empty($config)) {
-            switch ($config['drive']) {
-                case 'mysqli':
-                    MySQLi::getInstance($config);
-                    break;
-                case 'pdo':
-                    PDO::getInstance($config);
-                    break;
-                default:
-            }
+            PDO::getInstance($config);
         }
 
         $config = config('redis', []);

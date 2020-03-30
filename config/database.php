@@ -10,11 +10,13 @@ declare(strict_types=1);
  */
 
 return [
-    'drive' => 'mysqli',
     'host' => 'localhost',
     'port' => 3306,
     'database' => 'test',
     'username' => 'root',
     'password' => 'root',
     'charset' => 'utf8mb4',
+    'options' => [
+    ],
+    'size' => 64
 ];
