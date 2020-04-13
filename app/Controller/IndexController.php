@@ -17,4 +17,14 @@ class IndexController
     {
         $response->end('Hello Simps.');
     }
+
+    public function test($request, $response, $data)
+    {
+        $response->end(json_encode($data));
+    }
+
+    public function favicon($request, $response)
+    {
+        $response->end('');
+    }
 }
