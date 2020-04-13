@@ -14,8 +14,7 @@
         "php": ">=7.2",
         "ext-swoole": ">=4.4",
         "simple-swoole/simps": "dev-master",
-        "simple-swoole/db": "dev-master",
-        "swoole/library": "dev-master"
+        "simple-swoole/db": "dev-master"
     },
     "autoload": {
         "psr-4": {
@@ -24,5 +23,8 @@
     },
     "bin": [
         "bin/simps.php"
-    ]
+    ],
+    "config": {
+        "optimize-autoloader": true
+    }
 }
