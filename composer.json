@@ -1,7 +1,7 @@
 {
     "name": "simple-swoole/skeleton",
     "type": "project",
-    "description": "A swoole-based coroutine framework, simple and powerful.",
+    "description": "A simple, lightweight and high-performance PHP coroutine framework.",
     "keywords": [
         "php",
         "swoole",
@@ -11,7 +11,7 @@
     ],
     "license": "Apache-2.0",
     "require": {
-        "php": ">=7.2",
+        "php": ">=7.1",
         "ext-swoole": ">=4.4",
         "simple-swoole/simps": "dev-master",
         "simple-swoole/db": "dev-master"
