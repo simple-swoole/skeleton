@@ -8,23 +8,33 @@ declare(strict_types=1);
  * @document https://doc.simps.io
  * @license  https://github.com/simple-swoole/simps/blob/master/LICENSE
  */
-
 namespace App\Controller;
 
 class IndexController
 {
     public function index($request, $response)
     {
-        $response->end('Hello Simps.');
+        $response->end(
+            json_encode(
+                [
+                    'method' => $request->server['request_method'],
+                    'message' => 'Hello Simps.',
+                ]
+            )
+        );
     }
 
-    public function test($request, $response, $data)
+    public function hello($request, $response, $data)
     {
-        $response->end(json_encode($data));
-    }
+        $name = $data['name'] ?? 'Simps';
 
-    public function favicon($request, $response)
-    {
-        $response->end('');
+        $response->end(
+            json_encode(
+                [
+                    'method' => $request->server['request_method'],
+                    'message' => "Hello {$name}.",
+                ]
+            )
+        );
     }
 }
