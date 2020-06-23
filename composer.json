@@ -13,8 +13,8 @@
     "require": {
         "php": ">=7.1",
         "ext-swoole": ">=4.4",
-        "simple-swoole/simps": "dev-master",
-        "simple-swoole/db": "dev-master"
+        "simple-swoole/simps": "~1.0.0",
+        "simple-swoole/db": "~1.0.0"
     },
     "autoload": {
         "psr-4": {
